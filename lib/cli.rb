@@ -2,11 +2,12 @@ class CLI
 
     def start
         puts "**********Welcome to TIC TAC TOE**********"
-        puts "How many of you are there? Enter '0' just to watch, enter '1' for single player, '2' for two players, or "exit" to end the game."
+        puts "How many of you are there? Enter '0' just to watch, enter '1' for single player, '2' for two players, or 'exit' to end the game."
         input = user_input
         if input == "0"
             puts "Okay, here I go!"
             Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
+        end
         if input == "1"
             puts "Would you like to go first? If so, enter 'yes'"
             answer = gets.strip
