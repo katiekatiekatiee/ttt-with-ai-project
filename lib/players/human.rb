@@ -5,7 +5,7 @@ module Players
 
         def move(board)
             # board.display
-            puts "Please choose a number 1-9"
+            # puts "Please choose a number 1-9"
             input = gets.strip
             input
         end
